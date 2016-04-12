@@ -20,6 +20,20 @@ body {
     }
 }
 
+.title {
+    font-family: Moon;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+}
+
+.content {
+    font-family: Avenir;
+    font-weight: lighter;
+    font-size: 16px;
+    text-align: left;
+}
+
 .splash {
     position: relative;
     background-image: url('../img/space.svg');
@@ -36,20 +50,15 @@ body {
 .splash-text {
     color: white;
     width: 500px;
-    margin-top: -40px;
+    margin-top: -120px;
     padding: 0 10%;
 }
 
 .splash-title {
-    font-family: Moon;
-    font-weight: bold;
     font-size: 55px;
 }
 
 .splash-content {
-    font-family: Avenir;
-    font-weight: lighter;
-    font-size: 12px;
 }
 
 .rocket {
@@ -130,44 +139,29 @@ body {
 }
 
 .mentors-section {
-    text-align: center;
     padding: 50px;
 }
 
 .mentors-title {
-    font-family: Moon;
-    font-weight: bold;
-    font-size: 40px;
 }
 
 .mentors-content {
     padding-top: 50px;
-    text-align: left;
-    font-family: Avenir;
-    font-weight: lighter;
-    font-size: 12px;
     width: 80%;
     margin-left: 10%;
     color: #562959;
 }
 
 .missions-section {
-    text-align: center;
     padding: 10px;
+    text-align: center;
 }
 
 .missions-title {
-    font-family: Moon;
-    font-weight: bold;
-    font-size: 40px;
 }
 
 .missions-content {
     padding-top: 50px;
-    text-align: left;
-    font-family: Avenir;
-    font-weight: lighter;
-    font-size: 12px;
     width: 80%;
     margin-left: 10%;
     color: #562959;
@@ -179,13 +173,22 @@ body {
     margin-left: 10%;
 }
 
+.mission-row {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .single-mission {
     background-color: #d13f3f;
     width: 100px;
     height: 100px;
 
-    display: inline-block;
-    margin: 3px;
+    margin: 2px 3px;
+    display: flex;
+    align-items: center;
 }
 
 .icon-container {
@@ -193,27 +196,28 @@ body {
     height:auto;
 }
 
+.skill-text {
+    font-family: Moon;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    margin: auto;
+}
+
 .mission-row {
     margin: 3px;
 }
 
 .resources-section {
-    text-align: center;
     padding: 50px;
 }
 
 .resources-title {
-    font-family: Moon;
-    font-weight: bold;
-    font-size: 40px;
 }
 
 .resources-content {
     padding-top: 50px;
-    text-align: left;
-    font-family: Avenir;
-    font-weight: lighter;
-    font-size: 12px;
     width: 80%;
     margin-left: 10%;
     color: #562959;
@@ -221,32 +225,26 @@ body {
 
 .rocket-section {
     background-color: #ef2e25;
-    height: 280px;
     width: 100%;
     color: white;
 }
 
 .rocket-title {
-    padding-top: 30px;
-    text-align: center;
-    font-family: Moon;
-    font-weight: bold;
-    font-size: 40px;
+    padding: 40px 0;
 }
 
 .rocket-content {
-    padding-top: 10px;
-    text-align: left;
-    font-family: Avenir;
-    font-weight: lighter;
-    font-size: 12px;
     width: 80%;
     margin-left: 10%;
 }
 
+.rect-container {
+    padding: 40px 0;
+}
+
 .round-rect {
     position: relative;
-    margin: 50px auto;
+    margin: auto;
     width: 100px;
     height: 38px;
     border-radius: 10px;
@@ -266,7 +264,6 @@ body {
     background-color: #d13f3f;
     color: white;
     border-radius: 10px;
-    text-align: center;
 
     font-family: Moon;
     font-weight: bold;
@@ -274,25 +271,16 @@ body {
 
 .fuel-section {
     background-color:  #3a173c;
-    height: 280px;
     width: 100%;
     color: white;
 }
 
 .fuel-title {
-    padding-top: 30px;
-    text-align: center;
-    font-family: Moon;
-    font-weight: bold;
-    font-size: 40px;    
+    padding: 40px 0;
 }
 
 .fuel-content {
-    padding-top: 10px;
     text-align: left;
-    font-family: Avenir;
-    font-weight: lighter;
-    font-size: 12px;
     width: 80%;
     margin-left: 10%;
 }
@@ -305,7 +293,6 @@ body {
     background-color: #3a173c;
     color: white;
     border-radius: 10px;
-    text-align: center;
 
     font-family: Moon;
     font-size: 10px;
@@ -319,10 +306,6 @@ body {
 .partners-title {
     color: #3a173c;
     padding-top: 30px;
-    text-align: center;
-    font-family: Moon;
-    font-weight: bold;
-    font-size: 40px;  
 }
 
 .spark-footer {
@@ -355,17 +338,19 @@ body {
         display: none;
     }
 
-    .splash-title {
-        font-size: 33px;
-        text-align: center;
+    .splash-text {
         padding: 0;
+    }
+
+    .splash-title {
+        font-size: 30px;
     }
 
     .splash-content {
         padding-top: 20px;
         position: relative;
         margin: auto;
-        width: 300px;
+        width: 280px;
     }
 
     .nav-bar-title {
@@ -381,12 +366,16 @@ body {
         width: 50px;
     }
 
+    .skill-text {
+        font-size: 10px;
+    }
+
     .rocket-title, .fuel-title, .resources-title, .missions-title, .mentors-title, .partners-title {
         font-size: 30px;
     }
 
     .rocket-section, .fuel-section {
-        height: 320px;
+        height: 500px;
     }
 
     .hosted-by-spark {
