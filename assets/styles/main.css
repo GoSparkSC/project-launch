@@ -71,7 +71,6 @@ body {
 }
 
 .mountains {
-    // height: 700px;
     width: 100%;
 
     position: absolute;
@@ -139,7 +138,7 @@ body {
 }
 
 .mentors-section {
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .mentors-title {
@@ -153,8 +152,6 @@ body {
 }
 
 .missions-section {
-    padding: 10px;
-    text-align: center;
 }
 
 .missions-title {
@@ -165,6 +162,7 @@ body {
     width: 80%;
     margin-left: 10%;
     color: #562959;
+    margin-bottom: 50px;
 }
 
 .missions-icons-container {
@@ -210,7 +208,7 @@ body {
 }
 
 .resources-section {
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .resources-title {
@@ -372,10 +370,6 @@ body {
 
     .rocket-title, .fuel-title, .resources-title, .missions-title, .mentors-title, .partners-title {
         font-size: 30px;
-    }
-
-    .rocket-section, .fuel-section {
-        height: 500px;
     }
 
     .hosted-by-spark {
