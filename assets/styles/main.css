@@ -14,12 +14,6 @@ body {
     margin: 0;
 }
 
-@media (max-width:200px) {
-    .rocket {
-        display: none;
-    }
-}
-
 .title {
     font-family: Moon;
     font-weight: bold;
