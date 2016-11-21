@@ -19,6 +19,7 @@ body {
     font-weight: bold;
     font-size: 40px;
     text-align: center;
+    padding: 40px 0;
 }
 
 .content {
@@ -131,28 +132,13 @@ body {
     height: auto;
 }
 
-.mentors-section {
-    padding: 50px 0;
-}
-
-.mentors-title {
-}
-
 .mentors-content {
-    padding-top: 50px;
     width: 80%;
     margin-left: 10%;
     color: #562959;
 }
 
-.missions-section {
-}
-
-.missions-title {
-}
-
 .missions-content {
-    padding-top: 50px;
     width: 80%;
     margin-left: 10%;
     color: #562959;
@@ -205,22 +191,15 @@ body {
     margin: 3px;
 }
 
-.resources-section {
-    padding: 50px 0;
-}
-
-.resources-title {
-}
-
 .resources-content {
-    padding-top: 50px;
+    padding-bottom: 50px;
     width: 80%;
     margin-left: 10%;
     color: #562959;
 }
 
 .rocket-section {
-    background-color: #ef2e25;
+    background-color: #fc9a46;
     width: 100%;
     color: white;
 }
@@ -236,28 +215,80 @@ body {
 
 .rect-container {
     padding: 40px 0;
+    text-align: center;
+    position: relative;
 }
+
+    .rect-container a {
+        display: inline-block;
+        text-decoration: none;
+    }
 
 .round-rect {
     position: relative;
     margin: auto;
-    width: 100px;
-    height: 38px;
+    width: 130px;
+    height: 40px;
     border-radius: 10px;
     background-color: white;
+    text-decoration: none;
 
     display: flex;
     align-items: center;
     text-align: center;
-
 }
+
+    .rocket-headshot {
+        display: inline-block;
+        width: 47%;
+        margin: 0 2% 4% 0;
+        background: #f9dcc0;
+        background-size: 100% auto;
+    }
+
+    @media screen 
+    and (min-device-width: 640px) 
+    and (min-width: 640px) {
+        .rocket-headshot {
+            width: 30%;
+        }
+    }
+
+    @media screen 
+    and (min-device-width: 900px) 
+    and (min-width: 900px) {
+        .rocket-headshot {
+            width: 15%;
+            margin: 0 1% 2% 0;
+        }
+    }
+
+    .rocket-headshot img {
+        width: 100%;
+    }
+
+    .rocket-label {
+        visibility: hidden;
+        text-align: center;
+        margin: -35px 0 0 0;
+        padding: 0 0 12px 0;
+    }
+
+        .rocket-label span {
+            background: #3a173c;
+            padding: 4px 6px;
+        }
+
+        .rocket-headshot:hover .rocket-label {
+            visibility: visible;
+        }
 
 .rocket-apply {
     position: relative;
     margin: auto;
     width: 86%;
     padding: 6px 0;
-    background-color: #d13f3f;
+    background-color: #fc9a46;
     color: white;
     border-radius: 10px;
 
@@ -265,8 +296,23 @@ body {
     font-weight: bold;
 }
 
+.sponsors-section {
+    background-color: #3a173c;
+    width: 100%;
+    color: white;
+    padding-bottom: 40px;
+    text-align: center;
+    vertical-align: middle
+}
+
+.sponsors-section img {
+    height: 80px;
+    margin: 0 20px 20px 0;
+    vertical-align: middle
+}
+
 .fuel-section {
-    background-color:  #3a173c;
+    background-color:  #e73a28;
     width: 100%;
     color: white;
 }
@@ -281,17 +327,17 @@ body {
     margin-left: 10%;
 }
 
-.fuel-button {
+.fuel-button, .donate-button {
     position: relative;
     margin: auto;
     width: 86%;
     padding: 6px 0;
-    background-color: #3a173c;
+    background-color: #e73a28;
     color: white;
     border-radius: 10px;
 
     font-family: Moon;
-    font-size: 10px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -317,8 +363,8 @@ body {
 }
 
 .spark-footer {
-    background-color: #ef2e25;
-    height: 70px;
+    background-color: #21082c;
+    height: 100px;
 
     display: flex;
     align-items: center;
@@ -337,7 +383,7 @@ body {
 
     font-family: Moon;
     font-weight: bold;
-    font-size: 40px; 
+    font-size: 40px;
     display: inline;
 }
 
