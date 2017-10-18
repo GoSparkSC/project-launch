@@ -131,6 +131,20 @@ body {
     width: 100px;
     height: auto;
 }
+.gengirl-content {
+    background-color: #fc9a46;
+    width: 100%;
+    color: white;
+}
+
+.gengirl-title {
+    padding: 40px 0;
+}
+
+.gengirl-content {
+    width: 80%;
+    margin-left: 10%;
+}
 
 .mentors-content {
     width: 80%;
