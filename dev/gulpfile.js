@@ -2,11 +2,29 @@ var gulp          = require('gulp');
 var browserSync   = require('browser-sync').create();
 var $             = require('gulp-load-plugins')();
 var autoprefixer  = require('autoprefixer');
-
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 var sassPaths = [
   'node_modules/foundation-sites/scss',
   'node_modules/motion-ui/src'
 ];
+
+var jsPaths = [
+  'node_modules/jquery/dist/jquery.js',
+  'node_modules/what-input/dist/what-input.js',
+  'node_modules/foundation-sites/dist/js/foundation.js',
+  'node_modules/bootstrap/dist/js/bootstrap.min.js'
+];
+
+var bundle = require('gulp-bundle-assets');
+
+gulp.task('scripts', function() {
+    return gulp.src(jsPaths)
+    .pipe(concat('script.js'))
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/js/'));
+});
+
 
 function sass() {
   return gulp.src('scss/app.scss')
@@ -19,8 +37,9 @@ function sass() {
       autoprefixer({ browsers: ['last 2 versions', 'ie >= 9'] })
     ]))
     .pipe(gulp.dest('css'))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream())
 };
+
 
 function serve() {
   browserSync.init({
