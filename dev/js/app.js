@@ -17,3 +17,7 @@ var myPieChart = new Chart(ctx,{
     data: data,
     options: Chart.defaults.pie
 });
+
+$('.carousel').carousel({
+  interval: 1500
+})
