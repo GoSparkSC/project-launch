@@ -1,546 +1,729 @@
 @import 'node_modules/bootstrap/scss/bootstrap';
 @font-face {
-    font-family: Moon;
-    src: url("../font/Moon Light.otf");
-    font-weight: lighter;
+  font-family: Moon;
+  src: url("../assets/font/Moon Light.otf");
+  font-weight: lighter;
+}
+@font-face {
+  font-family: Moon;
+  src: url("../assets/font/Moon Bold.otf");
+  font-weight: bold;
 }
 
-@font-face {
-    font-family: Moon;
-    src: url("../font/Moon Bold.otf");
-    font-weight: bold;
+$color-dark: #171144;
+
+
+.button-abstract {
+  position: relative;
+  margin: auto;
+  width: 86%;
+  padding: 6px 0;
+  border-radius: 10px;
+  font-family: Moon;
+  font-size: 14px;
+  font-weight: bold;
 }
+
 
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 .title {
-    font-family: Helvetica;
-    font-weight: bold;
-    font-size: 40px;
-    text-align: center;
-    padding: 40px 0;
+  font-family: Moon;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  padding: 40px 0;
 }
 
 .content {
-    font-family: Helvetica;
-    font-weight: lighter;
-    font-size: 16px;
-    text-align: left;
+  font-family: Helvetica;
+  font-weight: lighter;
+  font-size: 16px;
+  text-align: left;
 }
 
 .carousel-indicators {
   li {
-      background-color: orange;
-
+    background-color: orange;
   }
 
   .active {
-    background-color:red;
+    background-color: red;
   }
-
 }
 
 .carousel-control-prev-icon {
   background-color: red;
 }
+
 .carousel-control-next-icon {
   background-color: red;
 }
 
-
-
 .splash {
-    position: relative;
-    background-image: url('https://via.placeholder.com/200x1000?text=Banner+Here');
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    background-color: #210a2b;
+  position: relative;
 
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  background-image: url('../assets/img/space.svg');
+  background-color: $color-dark;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
 }
 
 .splash-text {
-    color: white;
-    width: 500px;
-    margin-top: -120px;
-    padding: 0 10%;
+  color: white;
+  width: 80%;
+  margin-top: -120px;
+  padding: 0 10%;
+  z-index: 2000;
 }
 
 .splash-title {
-    font-size: 55px;
+  font-size: 40px;
+  text-align: left;
 }
 
-.splash-content {
-}
-
-
+.splash-content {}
 
 .rocket {
-    height: 600px;
-    width: auto;
 
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  width: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
-
-
 
 .mountains {
-    width: 100%;
-
-    position: absolute;
-    left: 0;
-    bottom: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
-
-
 
 .lamp {
-    position: absolute;
-    width: 120px;
-    height: auto;
-}
-#my-chart {
-  height: 100px;
-  width: 100px;
+  position: absolute;
+  width: 120px;
+  height: auto;
 }
 
 .lamp-one {
-    left: 320px;
-    bottom: 53px;
+  left: 320px;
+  bottom: 53px;
 }
 
 .lamp-two {
-    left: 510px;
-    bottom: 10px;
+  left: 510px;
+  bottom: 10px;
 }
 
 .lamp-three {
-    left: 625px;
-    bottom: 41px;
+  left: 625px;
+  bottom: 41px;
 }
 
-#chart-container {
-  height: 300px;
-  width: 300px;
-  #my-chart {
-    display: inline;
-    height: 300px;
-    width: 300px;
-    margin-left: 150px;
-    margin-top: 60px;
-  }
+.chart-container {
+  display: inline-block;
+  width: 45%;
+  margin: 2%;
+}
+
+.toggle-button {
+  @extend .button-abstract;
+  background-color: white;
+  color: black;
+}
+
+.apply-button {
+  @extend .button-abstract;
+  background-color: $color-dark;
+}
+
+.toggle {
+  text-decoration: line-through;
+  @extend .toggle-button;
+}
+
+.toggle-active {
+  text-decoration: none;
+  @extend .toggle-button;
+}
+
+.charts-information {
+  text-align: center;
 }
 
 .nav-bar {
-    z-index: 1;
-    width: 100%;
-    height: 100px;
-    background-color: #ef2e25;
-    color: white;
-
-    display: flex;
-    align-items: center;
-    text-align: left;
-
-    font-family: Moon;
-    font-weight: bold;
-    font-size: 55px;
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  background-color: #ef2e25;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  font-family: Moon;
+  font-weight: bold;
+  font-size: 55px;
 }
 
 .nav-bar-title {
-    margin-left: 10%;
+  margin-left: 10%;
 }
 
 .meteor-one {
-    position: absolute;
-    right: 0;
-    margin-top: -100px;
-
-    width: 200px;
-    margin-top: -100px;
+  position: absolute;
+  right: 0;
+  margin-top: -100px;
+  width: 200px;
+  margin-top: -100px;
+  opacity: 0.6;
 }
 
 .meteor-two {
-    position: absolute;
-    right: 0;
-    margin-top: 40px;
-
-    width: 100px;
-    height: auto;
+  position: absolute;
+  right: 0;
+  margin-top: 40px;
+  width: 100px;
+  height: auto;
+  opacity: 0.5;
 }
+
 .gengirl-content {
-    background-color: #fc9a46;
-    width: 100%;
-    color: white;
-    margin-left: 10%;
+  background-color: #fc9a46;
+  width: 100%;
+  color: white;
+  margin-left: 10%;
 }
 
 .gengirl-title {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 
 .gengirl-content {
-    width: 80%;
-    margin-left: 10%;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .mentors-content {
-    width: 80%;
-    margin-left: 10%;
-    color: #562959;
+  width: 80%;
+  margin-left: 10%;
+  color: #562959;
 }
+.horizontal-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 100px auto;
+  padding: 20px;
+  flex-direction: column;
+  .image-container-main, .horizontal-container-description {
+    width: 100%;
+  }
+  align-items: center;
+}
+.horizontal-container-two {
+  display: flex;
+  align-items: center;
+  align-content:center;
+  margin: 50px auto;
+  .round-rect {
+    margin: 0 5px;
+  }
+  #mentors {
+    margin-right: 0px;
+  }
+  #rockets {
+    margin-left: 0px;
+  }
+
+}
+
 
 .carousel-item-css {
   z-index: -1000;
-  height: 400px;
-  vertical-align: middle;
-  .content {
-    height: 400px;
-    padding-top: 100px;
-  }
-  div {
-    vertical-align: middle;
-    display: inline-block;
-  }
-  .image-container {
-    height: 400px;
-    width: 40%;
-    padding: 50px 20px;
-  }
-  .image {
-    height: 300px;
-    width: 400px;
-    background: url('https://via.placeholder.com/400x300?text=PLVideo');
 
-    img {
-      display:block;
-      margin:auto;
-    }
-  }
 }
+.horizontal-container-description {
+  width: 40%;
+  align-self: center;
+}
+
+
+
+#apply-desc-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  padding: 50px;
+  height: 500px;
+  order: 1;
+}
+
+#apply-section {
+  background-color: $color-dark;
+  color: #FFFFFF;
+  padding: 0px;
+
+}
+
+#scroll-grid-image {
+  animation:scroll-grid 180s linear infinite;
+  -webkit-animation:scroll-grid 180s linear infinite;
+  background-repeat:repeat-x;
+  background-position: center;
+  width: 10000px;
+  height: 100%;
+  background-image: url('https://unsplash.com/assets/api/api-photo-grid@2x-91e58fc51b4076707c684845cff4670673a1db47b52c592cdd416f6b9ab7bfca.jpg');
+}
+
+@keyframes scroll-grid{
+    0%{
+        -webkit-transform:translate3d(0, 0, 0);
+        transform:translate3d(0, 0, 0)
+    }
+    100%{
+        -webkit-transform:translate3d(-2420px, 0, 0);
+        transform:translate3d(-2420px, 0, 0)
+    }
+}
+
+#scrolling-apply-grid {
+  //TODO: replace with project launch's scrolling grid
+  overflow: hidden;
+
+height: 500px;
+order: 0;
+
+}
+
+.image-container-main {
+  width:50%;
+  margin : 20px;
+}
+
 .missions-content {
-    width: 80%;
-    margin-left: 10%;
-    color: #562959;
-    margin-bottom: 50px;
+  width: 80%;
+  margin-left: 10%;
+  color: #562959;
+  margin-bottom: 50px;
 }
 
 iframe {
-    display: block;
-    margin: auto;
-    margin-bottom: 5%;
-    border: 4px solid #562959;
+  display: block;
+  margin: auto auto 5%;
+  border: 4px solid #562959;
 }
+
 .missions-icons-container {
-    height: 800px;
-    width: 80%;
-    margin-left: 10%;
+  height: 800px;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .content-indent-faq {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .mission-row {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .single-mission {
-    background-color: #d13f3f;
-    width: 100px;
-    height: 100px;
-
-    margin: 2px 3px;
-    display: flex;
-    align-items: center;
+  background-color: #d13f3f;
+  width: 100px;
+  height: 100px;
+  margin: 2px 3px;
+  display: flex;
+  align-items: center;
 }
 
 .icon-container {
-    width: 100px;
-    height:auto;
+  width: 100px;
+  height: auto;
 }
 
 .skill-text {
-    font-family: Moon;
-    font-weight: bold;
-    font-size: 18px;
-    color: white;
-    position: relative;
-    margin: auto;
+  font-family: Moon;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+  position: relative;
+  margin: auto;
 }
 
 .mission-row {
-    margin: 3px;
+  margin: 3px;
 }
 
 .powerup-content {
-    width: 80%;
-    margin-left: 10%;
-    color: #562959;
+  width: 80%;
+  margin-left: 10%;
+  color: #562959;
 }
 
 .resources-content {
-    width: 80%;
-    margin-left: 10%;
-    color: #562959;
+  width: 80%;
+  margin-left: 10%;
+  color: #562959;
 }
 
 .rocket-section {
-    background-color: #fc9a46;
-    width: 100%;
-    color: white;
+  background-color: #fc9a46;
+  width: 100%;
+  color: white;
 }
 
 .rocket-title {
-    padding: 40px 0;
+  padding: 40px 0;
 }
 
 .rocket-content {
-    width: 80%;
-    margin-left: 10%;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .rect-container {
-    padding: 40px 0;
-    text-align: center;
-    position: relative;
+  padding: 40px 0;
+  text-align: center;
+  position: relative;
 }
 
-    .rect-container a {
-        display: inline-block;
-        text-decoration: none;
-    }
+.rect-container a {
+  display: inline-block;
+  text-decoration: none;
+}
 
 .powerup-container {
-    text-align: center;
-    position: relative;
+  text-align: center;
+  position: relative;
 }
 
-    .powerup-container a {
-        display: inline-block;
-        text-decoration: none;
-    }
+.powerup-container a {
+  display: inline-block;
+  text-decoration: none;
+}
 
 .round-rect {
-    position: relative;
-    margin: auto;
-    width: 130px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: white;
-    text-decoration: none;
-
-    display: flex;
-    align-items: center;
-    text-align: center;
+  position: relative;
+  margin: auto;
+  width: 130px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
-    .rocket-headshot {
-        display: inline-block;
-        width: 47%;
-        margin: 0 2% 4% 0;
-        background: #f9dcc0;
-        background-size: 100% auto;
+.inverse-round-rect {
+  @extend .round-rect;
+  background-color: red;
+  display: inline-block;
+  padding-top:3px;
+}
+
+
+.photo-card-border {
+    padding: 25px;
+    background-color: white;
+    border-radius: 8px;
+    -webkit-box-shadow: 3px 7px 30px -4px rgba(0,0,0,0.2);
+    -moz-box-shadow: 3px 7px 30px -4px rgba(0,0,0,0.2);
+    box-shadow: 3px 7px 30px -4px rgba(0,0,0,0.2);
+}
+
+.rocket-headshot {
+  display: inline-block;
+  width: 47%;
+  margin: 0 2% 4% 0;
+  background: #f9dcc0;
+  background-size: 100% auto;
+}
+
+
+
+
+@media screen and (min-device-width: 800px) and (min-width: 800px) {
+  .rocket-headshot {
+    width: 30%;
+  }
+  .horizontal-container {
+    flex-direction: row;
+    .image-container-main {
+      width: 50%;
+    }
+    .horizontal-container-description {
+      width: 40%;
     }
 
-    @media screen
-    and (min-device-width: 640px)
-    and (min-width: 640px) {
-        .rocket-headshot {
-            width: 30%;
-        }
+  }
+  .rocket {
+    height: 600px;
+    width: auto;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  .splash-text {
+    width: 700px;
+    text-align: left;
+  }
+
+  .splash-title {
+    text-align: left;
+  }
+
+  #scrolling-apply-grid {
+    height: 600px;
+    flex-basis: 66%;
+    order: 1;
+  }
+  #apply-desc-container {
+    width: 40%;
+    height: 600px;
+    order: 0;
+  }
+
+  #internships-desc-container {
+    order: 0;
+  }
+  #internships-image-container {
+    order: 1;
+  }
+
+  .horizontal-container-two {
+
+    .round-rect {
+      margin: 0 2px;
     }
 
-    @media screen
-    and (min-device-width: 900px)
-    and (min-width: 900px) {
-        .rocket-headshot {
-            width: 15%;
-            margin: 0 1% 2% 0;
-        }
+  }
+}
+@media screen and (min-device-width: 900px) and (min-width: 900px) {
+  .rocket-headshot {
+    width: 15%;
+    margin: 0 1% 2% 0;
+  }
+  .horizontal-container-two {
+
+    .round-rect {
+      margin: 0 5px;
     }
 
-    .rocket-headshot img {
-        width: 100%;
-    }
+  }
+  .splash-title {
+    text-align: left;
+  }
+  .splash-text {
+    width: 80%;
+    text-align: left;
+  }
+  #internships-desc-container {
+    order: 0;
+  }
+  #internships-image-container {
+    order: 1;
+  }
 
-    .rocket-label {
-        visibility: hidden;
-        text-align: center;
-        margin: -35px 0 0 0;
-        padding: 0 0 12px 0;
-    }
 
-        .rocket-label span {
-            background: #3a173c;
-            padding: 4px 6px;
-        }
 
-        .rocket-headshot:hover .rocket-label {
-            visibility: visible;
-        }
+}
+
+
+
+
+.rocket-headshot img {
+  width: 100%;
+}
+
+.rocket-label {
+  visibility: hidden;
+  text-align: center;
+  margin: -35px 0 0;
+  padding: 0 0 12px;
+}
+
+.rocket-label span {
+  background: #3a173c;
+  padding: 4px 6px;
+}
+
+.rocket-headshot:hover .rocket-label {
+  visibility: visible;
+}
 
 .rocket-apply {
-    position: relative;
-    margin: auto;
-    width: 86%;
-    padding: 6px 0;
-    background-color: #fc9a46;
-    color: white;
-    border-radius: 10px;
-
-    font-family: Moon;
-    font-weight: bold;
+  position: relative;
+  margin: auto;
+  width: 86%;
+  padding: 6px 0;
+  background-color: #fc9a46;
+  color: white;
+  border-radius: 10px;
+  font-family: Moon;
+  font-weight: bold;
 }
 
 .sponsors-section {
-    background-color: #3a173c;
-    width: 100%;
-    color: white;
-    padding-bottom: 40px;
-    text-align: center;
-    vertical-align: middle
+  background-color: #3a173c;
+  width: 100%;
+  color: white;
+  padding-bottom: 40px;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .sponsors-section img {
-    height: 80px;
-    margin: 0 20px 20px 0;
-    vertical-align: middle
+  height: 80px;
+  margin: 0 20px 20px 0;
+  vertical-align: middle;
 }
 
 .fuel-section {
-    background-color:  #e73a28;
-    width: 100%;
-    color: white;
+  background-color: #e73a28;
+  width: 100%;
+  color: white;
 }
 
 .fuel-title {
-    padding: 40px 0;
+  padding: 40px 0;
 }
 
 .fuel-content {
-    text-align: left;
-    width: 80%;
-    margin-left: 10%;
+  text-align: left;
+  width: 80%;
+  margin-left: 10%;
 }
 
-.fuel-button, .donate-button, .powerup-button {
-    position: relative;
-    margin: auto;
-    width: 86%;
-    padding: 6px 0;
-    background-color: #e73a28;
-    color: white;
-    border-radius: 10px;
-    font-family: Moon;
-    font-size: 14px;
-    font-weight: bold;
+
+.donate-button,
+.fuel-button,
+.powerup-button {
+  position: relative;
+  margin: auto;
+  width: 86%;
+  padding: 6px 0;
+  background-color: #e73a28;
+  color: white;
+  border-radius: 10px;
+  font-family: Moon;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .partners-section {
-    height: 400px;
+  height: 400px;
 }
 
 .partners-title {
-    color: #3a173c;
-    padding-top: 30px;
+  color: #3a173c;
+  padding-top: 30px;
 }
 
 .contact-us {
-    margin-top: 30px;
-    text-align: center;
-    font-family: Avenir;
+  margin-top: 30px;
+  text-align: center;
+  font-family: Avenir;
 }
 
 .no-underline {
-    text-decoration: none;
-    font-weight: bold;
-    color: #FFFFFF;
+  text-decoration: none;
+  font-weight: bold;
+  color: #FFFFFF;
 }
 
 .spark-footer {
-    background-color: #21082c;
-    height: 100px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: #21082c;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .spark-logo {
-    height: 50px;
-    width: auto;
-    display: inline-block;
-    margin: 0 20px;
+  height: 50px;
+  width: auto;
+  display: inline-block;
+  margin: 0 20px;
 }
 
 .hosted-by-spark {
-    color: white;
-
-    font-family: Moon;
-    font-weight: bold;
-    font-size: 40px;
-    display: inline;
+  color: white;
+  font-family: Moon;
+  font-weight: bold;
+  font-size: 40px;
+  display: inline;
 }
-
 @media (max-width: 700px) {
-    .rocket, .meteor-one, .meteor-two {
-        display: none;
-    }
+  .meteor-one,
+  .meteor-two,
+  .rocket {
+    display: none;
+  }
 
-    .splash-text {
-        padding: 0;
-    }
+  .splash-text {
+    padding: 0;
+    width: 500px;
+  }
 
-    .splash-title {
-        font-size: 30px;
-    }
+  .splash-title {
+    font-size: 30px;
+    text-align: center;
+  }
 
-    .splash-content {
-        padding-top: 20px;
-        position: relative;
-        margin: auto;
-        width: 280px;
-    }
 
-    .nav-bar-title {
-        font-size: 20px;
-    }
+  .splash-content {
+    padding-top: 20px;
+    position: relative;
+    margin: auto;
+    width: 280px;
+  }
 
-    .nav-bar {
-        height: 50px;
-    }
+  .nav-bar-title {
+    font-size: 20px;
+  }
 
-    .single-mission, .icon-container {
-        height: 50px;
-        width: 50px;
-    }
+  .nav-bar {
+    height: 50px;
+  }
 
-    .skill-text {
-        font-size: 10px;
-    }
+  .icon-container,
+  .single-mission {
+    height: 50px;
+    width: 50px;
+  }
 
-    .rocket-title, .fuel-title, .resources-title, .powerup-title, .first-title, .missions-title, .mentors-title, .partners-title {
-        font-size: 30px;
-    }
+  .skill-text {
+    font-size: 10px;
+  }
 
-    .hosted-by-spark {
-        font-size: 25px;
-    }
+  .first-title,
+  .fuel-title,
+  .mentors-title,
+  .missions-title,
+  .partners-title,
+  .powerup-title,
+  .resources-title,
+  .rocket-title {
+    font-size: 30px;
+  }
 
-    .spark-logo {
-        height: 40px;
-    }
+  .hosted-by-spark {
+    font-size: 25px;
+  }
 
+  .spark-logo {
+    height: 40px;
+  }
 }
