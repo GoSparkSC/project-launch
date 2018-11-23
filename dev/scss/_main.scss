@@ -25,12 +25,56 @@ $color-dark: #171144;
 }
 
 
+.post-card {
+    -ms-flex: 1 1 300px;
+    flex: 1 1 300px;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0 20px 40px;
+    min-height: 300px;
+    background: #fff 50%;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 8px 14px 38px rgba(23, 17, 68, .06), 1px 3px 8px rgba(23, 17, 68, .03);
+    transition: all .5s ease;
+}
+.post-card:hover {
+  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  box-shadow: 8px 14px 38px rgba(212, 89, 60,.2), 1px 3px 8px rgba(212, 89, 60,.1);
+}
+
+.post-card-image {
+    width: auto;
+    height: 200px;
+    background: #c5d2d9 no-repeat 50%;
+    background-size: cover;
+}
+
+.post-card-content {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding:20px;
+}
+
 body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-
+.subtitle {
+  font-family: Avenir;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
 .title {
   font-family: Moon;
   font-weight: bold;
@@ -138,11 +182,13 @@ body {
   @extend .button-abstract;
   background-color: white;
   color: black;
+  font-size: 20px;
 }
 
-.apply-button {
+.apply-button, .fuel-button {
   @extend .button-abstract;
   background-color: $color-dark;
+  color: white;
 }
 
 .toggle {
@@ -225,6 +271,7 @@ body {
   flex-direction: column;
   .image-container-main, .horizontal-container-description {
     width: 100%;
+    padding: 20px;
   }
   align-items: center;
 }
@@ -431,6 +478,7 @@ iframe {
   background-color: red;
   display: inline-block;
   padding-top:3px;
+  height: 50px;
 }
 
 
@@ -465,9 +513,20 @@ iframe {
     }
     .horizontal-container-description {
       width: 40%;
+
+    }
+    .right {
+      text-align:right;
+    }
+    .left {
+      text-align: left;
     }
 
   }
+  .subtitle {
+    text-align: left;
+  }
+
   .rocket {
     height: 600px;
     width: auto;
@@ -514,6 +573,11 @@ iframe {
   .rocket-headshot {
     width: 15%;
     margin: 0 1% 2% 0;
+  }
+  .chart-container {
+    display: inline-block;
+    width: 500px;
+    margin: 2%;
   }
   .horizontal-container-two {
 
@@ -576,9 +640,8 @@ iframe {
 }
 
 .sponsors-section {
-  background-color: #3a173c;
+  background-color: white;
   width: 100%;
-  color: white;
   padding-bottom: 40px;
   text-align: center;
   vertical-align: middle;
@@ -586,12 +649,12 @@ iframe {
 
 .sponsors-section img {
   height: 80px;
-  margin: 0 20px 20px 0;
+  margin: 50px;
   vertical-align: middle;
 }
 
 .fuel-section {
-  background-color: #e73a28;
+  background-color: $color-dark;
   width: 100%;
   color: white;
 }
@@ -608,7 +671,6 @@ iframe {
 
 
 .donate-button,
-.fuel-button,
 .powerup-button {
   position: relative;
   margin: auto;
@@ -644,15 +706,19 @@ iframe {
 }
 
 .spark-footer {
-  background-color: #21082c;
+  background-color: $color-dark;
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.too-small {
+  height: 200px;
+}
+
 .spark-logo {
-  height: 50px;
+  height: 80px;
   width: auto;
   display: inline-block;
   margin: 0 20px;
@@ -671,6 +737,7 @@ iframe {
   .rocket {
     display: none;
   }
+
 
   .splash-text {
     padding: 0;
@@ -698,6 +765,7 @@ iframe {
     height: 50px;
   }
 
+
   .icon-container,
   .single-mission {
     height: 50px;
@@ -723,7 +791,5 @@ iframe {
     font-size: 25px;
   }
 
-  .spark-logo {
-    height: 40px;
-  }
+
 }
