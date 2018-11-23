@@ -103,7 +103,7 @@ $(document).ready(function() {
     });
     chart.update();
   }
-  
+
   $.fn.isInViewport = function() {
     //console.log($(this))
     if ($(this).length > 0) {
