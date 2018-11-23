@@ -24,7 +24,7 @@ let data = {
 $('.carousel').carousel({interval: 1500})
 
 var ethinicity_chart_do = document.getElementById('ethnicity-chart').getContext('2d');
-Chart.defaults.global.defaultFontSize = 20;
+Chart.defaults.global.defaultFontSize = 14;
 let data_ethnicity = {
   datasets: [
     {
@@ -42,7 +42,7 @@ let data_ethnicity = {
     }
   ],
   // These labels appear in the legend and in the tooltips when hovering different arcs
-  labels: ['African American', 'Hispanic']
+  labels: ['Afr. Amer.', 'Hispanic']
 };
 var myPieChart = null;
 var ethnicity_pie_chart = null;
