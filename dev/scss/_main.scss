@@ -9,9 +9,15 @@
   src: url("../assets/font/Moon Bold.otf");
   font-weight: bold;
 }
-
 $color-dark: #171144;
 
+body,
+html {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 .button-abstract {
   position: relative;
@@ -24,50 +30,46 @@ $color-dark: #171144;
   font-weight: bold;
 }
 
-
 .post-card {
-    -ms-flex: 1 1 300px;
-    flex: 1 1 300px;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    overflow: hidden;
-    margin: 0 20px 40px;
-    min-height: 300px;
-    background: #fff 50%;
-    background-size: cover;
-    border-radius: 5px;
-    box-shadow: 8px 14px 38px rgba(23, 17, 68, .06), 1px 3px 8px rgba(23, 17, 68, .03);
-    transition: all .5s ease;
+  -ms-flex: 1 1 350px;
+  flex: 1 1 350px;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow: hidden;
+  margin: 0 20px 40px;
+  min-height: 300px;
+  background: #fff 50%;
+  background-size: cover;
+  border-radius: 5px;
+  box-shadow: 8px 14px 38px rgba(23, 17, 68, .06), 1px 3px 8px rgba(23, 17, 68, .03);
+  transition: all 0.5s ease;
 }
+
 .post-card:hover {
-  transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(1.05);
+  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   box-shadow: 8px 14px 38px rgba(212, 89, 60,.2), 1px 3px 8px rgba(212, 89, 60,.1);
 }
 
 .post-card-image {
-    width: auto;
-    height: 200px;
-    background: #c5d2d9 no-repeat 50%;
-    background-size: cover;
+  width: auto;
+  height: 200px;
+  background: #c5d2d9 no-repeat 50%;
+  background-size: cover;
 }
 
 .post-card-content {
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding:20px;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 20px;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-}
 .subtitle {
   font-family: Avenir;
   font-weight: bold;
@@ -75,6 +77,7 @@ body {
   margin-bottom: 10px;
   text-align: center;
 }
+
 .title {
   font-family: Moon;
   font-weight: bold;
@@ -110,7 +113,6 @@ body {
 
 .splash {
   position: relative;
-
   width: 100%;
   height: 600px;
   background-size: cover;
@@ -137,7 +139,6 @@ body {
 .splash-content {}
 
 .rocket {
-
   width: auto;
   position: absolute;
   bottom: 0;
@@ -185,7 +186,8 @@ body {
   font-size: 20px;
 }
 
-.apply-button, .fuel-button {
+.apply-button,
+.fuel-button {
   @extend .button-abstract;
   background-color: $color-dark;
   color: white;
@@ -262,6 +264,7 @@ body {
   margin-left: 10%;
   color: #562959;
 }
+
 .horizontal-container {
   display: flex;
   width: 100%;
@@ -269,40 +272,42 @@ body {
   margin: 100px auto;
   padding: 20px;
   flex-direction: column;
-  .image-container-main, .horizontal-container-description {
+
+  .horizontal-container-description,
+  .image-container-main {
     width: 100%;
     padding: 20px;
   }
   align-items: center;
 }
+
 .horizontal-container-two {
   display: flex;
   align-items: center;
-  align-content:center;
+  align-content: center;
   margin: 50px auto;
+
   .round-rect {
     margin: 0 5px;
   }
+
   #mentors {
-    margin-right: 0px;
+    margin-right: 0;
   }
+
   #rockets {
-    margin-left: 0px;
+    margin-left: 0;
   }
-
 }
-
 
 .carousel-item-css {
   z-index: -1000;
-
 }
+
 .horizontal-container-description {
   width: 40%;
   align-self: center;
 }
-
-
 
 #apply-desc-container {
   display: flex;
@@ -316,43 +321,40 @@ body {
 #apply-section {
   background-color: $color-dark;
   color: #FFFFFF;
-  padding: 0px;
-
+  padding: 0;
 }
 
 #scroll-grid-image {
-  animation:scroll-grid 180s linear infinite;
-  -webkit-animation:scroll-grid 180s linear infinite;
-  background-repeat:repeat-x;
+  animation: scroll-grid 180s linear infinite;
+  -webkit-animation: scroll-grid 180s linear infinite;
+  background-repeat: repeat-x;
   background-position: center;
   width: 10000px;
   height: 100%;
   background-image: url('https://unsplash.com/assets/api/api-photo-grid@2x-91e58fc51b4076707c684845cff4670673a1db47b52c592cdd416f6b9ab7bfca.jpg');
 }
+@keyframes scroll-grid {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
 
-@keyframes scroll-grid{
-    0%{
-        -webkit-transform:translate3d(0, 0, 0);
-        transform:translate3d(0, 0, 0)
-    }
-    100%{
-        -webkit-transform:translate3d(-2420px, 0, 0);
-        transform:translate3d(-2420px, 0, 0)
-    }
+  100% {
+    -webkit-transform: translate3d(-2420px, 0, 0);
+    transform: translate3d(-2420px, 0, 0);
+  }
 }
 
 #scrolling-apply-grid {
   //TODO: replace with project launch's scrolling grid
   overflow: hidden;
-
-height: 500px;
-order: 0;
-
+  height: 500px;
+  order: 0;
 }
 
 .image-container-main {
-  width:50%;
-  margin : 20px;
+  width: 50%;
+  margin: 20px;
 }
 
 .missions-content {
@@ -477,18 +479,17 @@ iframe {
   @extend .round-rect;
   background-color: red;
   display: inline-block;
-  padding-top:3px;
+  padding-top: 3px;
   height: 50px;
 }
 
-
 .photo-card-border {
-    padding: 25px;
-    background-color: white;
-    border-radius: 8px;
-    -webkit-box-shadow: 3px 7px 30px -4px rgba(0,0,0,0.2);
-    -moz-box-shadow: 3px 7px 30px -4px rgba(0,0,0,0.2);
-    box-shadow: 3px 7px 30px -4px rgba(0,0,0,0.2);
+  padding: 25px;
+  background-color: white;
+  border-radius: 8px;
+  -webkit-box-shadow: 3px 7px 30px -4px rgba(0,0,0,0.2);
+  -moz-box-shadow: 3px 7px 30px -4px rgba(0,0,0,0.2);
+  box-shadow: 3px 7px 30px -4px rgba(0,0,0,0.2);
 }
 
 .rocket-headshot {
@@ -498,31 +499,31 @@ iframe {
   background: #f9dcc0;
   background-size: 100% auto;
 }
-
-
-
-
 @media screen and (min-device-width: 800px) and (min-width: 800px) {
   .rocket-headshot {
     width: 30%;
   }
+
   .horizontal-container {
     flex-direction: row;
+
     .image-container-main {
       width: 50%;
     }
+
     .horizontal-container-description {
       width: 40%;
+    }
 
-    }
     .right {
-      text-align:right;
+      text-align: right;
     }
+
     .left {
       text-align: left;
     }
-
   }
+
   .subtitle {
     text-align: left;
   }
@@ -534,6 +535,7 @@ iframe {
     bottom: 0;
     right: 0;
   }
+
   .splash-text {
     width: 700px;
     text-align: left;
@@ -548,6 +550,7 @@ iframe {
     flex-basis: 66%;
     order: 1;
   }
+
   #apply-desc-container {
     width: 40%;
     height: 600px;
@@ -557,16 +560,15 @@ iframe {
   #internships-desc-container {
     order: 0;
   }
+
   #internships-image-container {
     order: 1;
   }
 
   .horizontal-container-two {
-
     .round-rect {
       margin: 0 2px;
     }
-
   }
 }
 @media screen and (min-device-width: 900px) and (min-width: 900px) {
@@ -574,38 +576,36 @@ iframe {
     width: 15%;
     margin: 0 1% 2% 0;
   }
+
   .chart-container {
     display: inline-block;
     width: 500px;
     margin: 2%;
   }
-  .horizontal-container-two {
 
+  .horizontal-container-two {
     .round-rect {
       margin: 0 5px;
     }
-
   }
+
   .splash-title {
     text-align: left;
   }
+
   .splash-text {
     width: 80%;
     text-align: left;
   }
+
   #internships-desc-container {
     order: 0;
   }
+
   #internships-image-container {
     order: 1;
   }
-
-
-
 }
-
-
-
 
 .rocket-headshot img {
   width: 100%;
@@ -669,7 +669,6 @@ iframe {
   margin-left: 10%;
 }
 
-
 .donate-button,
 .powerup-button {
   position: relative;
@@ -713,8 +712,6 @@ iframe {
   justify-content: center;
 }
 
-
-
 .spark-logo {
   height: 80px;
   width: auto;
@@ -736,7 +733,6 @@ iframe {
     display: none;
   }
 
-
   .splash-text {
     padding: 0;
     width: 500px;
@@ -746,7 +742,6 @@ iframe {
     font-size: 30px;
     text-align: center;
   }
-
 
   .splash-content {
     padding-top: 20px;
@@ -762,7 +757,6 @@ iframe {
   .nav-bar {
     height: 50px;
   }
-
 
   .icon-container,
   .single-mission {
@@ -788,6 +782,4 @@ iframe {
   .hosted-by-spark {
     font-size: 25px;
   }
-
-
 }
