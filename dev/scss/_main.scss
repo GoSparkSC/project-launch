@@ -767,6 +767,11 @@ iframe {
   .skill-text {
     font-size: 10px;
   }
+  .sponsors-section img {
+    height: 50px;
+    margin: 50px;
+    vertical-align: middle;
+  }
 
   .first-title,
   .fuel-title,
@@ -780,6 +785,13 @@ iframe {
   }
 
   .hosted-by-spark {
-    font-size: 25px;
+    font-size: 20px;
   }
+  .spark-logo {
+    height: 50px;
+    width: auto;
+    display: inline-block;
+    margin: 0 20px;
+  }
+
 }
