@@ -1,0 +1,473 @@
+@font-face {
+    font-family: Moon;
+    src: url("../font/Moon Light.otf");
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: Moon;
+    src: url("../font/Moon Bold.otf");
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+}
+
+.title {
+    font-family: Moon;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.content {
+    font-family: Avenir;
+    font-weight: lighter;
+    font-size: 16px;
+    text-align: left;
+}
+
+.splash {
+    position: relative;
+    background-image: url('../img/space.svg');
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-color: #210a2b;
+
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+.splash-text {
+    color: white;
+    width: 500px;
+    margin-top: -120px;
+    padding: 0 10%;
+}
+
+.splash-title {
+    font-size: 55px;
+}
+
+.splash-content {
+}
+
+.rocket {
+    height: 600px;
+    width: auto;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.mountains {
+    width: 100%;
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.lamp {
+    position: absolute;
+    width: 120px;
+    height: auto;
+}
+
+.lamp-one {
+    left: 320px;
+    bottom: 53px;
+}
+
+.lamp-two {
+    left: 510px;
+    bottom: 10px;
+}
+
+.lamp-three {
+    left: 625px;
+    bottom: 41px;
+}
+
+.nav-bar {
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    background-color: #ef2e25;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    text-align: left;
+
+    font-family: Moon;
+    font-weight: bold;
+    font-size: 55px;
+}
+
+.nav-bar-title {
+    margin-left: 10%;
+}
+
+.meteor-one {
+    position: absolute;
+    right: 0;
+    margin-top: -100px;
+
+    width: 200px;
+    margin-top: -100px;
+}
+
+.meteor-two {
+    position: absolute;
+    right: 0;
+    margin-top: 40px;
+
+    width: 100px;
+    height: auto;
+}
+.gengirl-content {
+    background-color: #fc9a46;
+    width: 100%;
+    color: white;
+    margin-left: 10%;
+}
+
+.gengirl-title {
+    padding: 30px 0;
+}
+
+.gengirl-content {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.mentors-content {
+    width: 80%;
+    margin-left: 10%;
+    color: #562959;
+}
+
+.missions-content {
+    width: 80%;
+    margin-left: 10%;
+    color: #562959;
+    margin-bottom: 50px;
+}
+
+iframe {
+    display: block;
+    margin: auto;
+    margin-bottom: 5%;
+    border: 4px solid #562959;
+}
+.missions-icons-container {
+    height: 800px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.content-indent-faq {
+    margin-left: 20px;
+}
+
+.mission-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-mission {
+    background-color: #d13f3f;
+    width: 100px;
+    height: 100px;
+
+    margin: 2px 3px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-container {
+    width: 100px; 
+    height:auto;
+}
+
+.skill-text {
+    font-family: Moon;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    position: relative;
+    margin: auto;
+}
+
+.mission-row {
+    margin: 3px;
+}
+
+.powerup-content {
+    width: 80%;
+    margin-left: 10%;
+    color: #562959;
+}
+
+.resources-content {
+    width: 80%;
+    margin-left: 10%;
+    color: #562959;
+}
+
+.rocket-section {
+    background-color: #fc9a46;
+    width: 100%;
+    color: white;
+}
+
+.rocket-title {
+    padding: 40px 0;
+}
+
+.rocket-content {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.rect-container {
+    padding: 40px 0;
+    text-align: center;
+    position: relative;
+}
+    
+    .rect-container a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+.powerup-container {
+    text-align: center;
+    position: relative;
+}
+
+    .powerup-container a {
+        display: inline-block;
+        text-decoration: none;
+    }
+
+.round-rect {
+    position: relative;
+    margin: auto;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+    .rocket-headshot {
+        display: inline-block;
+        width: 47%;
+        margin: 0 2% 4% 0;
+        background: #f9dcc0;
+        background-size: 100% auto;
+    }
+
+    @media screen 
+    and (min-device-width: 640px) 
+    and (min-width: 640px) {
+        .rocket-headshot {
+            width: 30%;
+        }
+    }
+
+    @media screen 
+    and (min-device-width: 900px) 
+    and (min-width: 900px) {
+        .rocket-headshot {
+            width: 15%;
+            margin: 0 1% 2% 0;
+        }
+    }
+
+    .rocket-headshot img {
+        width: 100%;
+    }
+
+    .rocket-label {
+        visibility: hidden;
+        text-align: center;
+        margin: -35px 0 0 0;
+        padding: 0 0 12px 0;
+    }
+
+        .rocket-label span {
+            background: #3a173c;
+            padding: 4px 6px;
+        }
+
+        .rocket-headshot:hover .rocket-label {
+            visibility: visible;
+        }
+
+.rocket-apply {
+    position: relative;
+    margin: auto;
+    width: 86%;
+    padding: 6px 0;
+    background-color: #fc9a46;
+    color: white;
+    border-radius: 10px;
+
+    font-family: Moon;
+    font-weight: bold;
+}
+
+.sponsors-section {
+    background-color: #3a173c;
+    width: 100%;
+    color: white;
+    padding-bottom: 40px;
+    text-align: center;
+    vertical-align: middle
+}
+
+.sponsors-section img {
+    height: 80px;
+    margin: 0 20px 20px 0;
+    vertical-align: middle
+}
+
+.fuel-section {
+    background-color:  #e73a28;
+    width: 100%;
+    color: white;
+}
+
+.fuel-title {
+    padding: 40px 0;
+}
+
+.fuel-content {
+    text-align: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.fuel-button, .donate-button, .powerup-button {
+    position: relative;
+    margin: auto;
+    width: 86%;
+    padding: 6px 0;
+    background-color: #e73a28;
+    color: white;
+    border-radius: 10px;
+    font-family: Moon;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.partners-section {
+    height: 400px;
+}
+
+.partners-title {
+    color: #3a173c;
+    padding-top: 30px;
+}
+
+.contact-us {
+    margin-top: 30px;
+    text-align: center;
+    font-family: Avenir;
+}
+
+.no-underline {
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.spark-footer {
+    background-color: #21082c;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spark-logo {
+    height: 50px;
+    width: auto;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.hosted-by-spark {
+    color: white;
+
+    font-family: Moon;
+    font-weight: bold;
+    font-size: 40px;
+    display: inline;
+}
+
+@media (max-width: 700px) {
+    .rocket, .meteor-one, .meteor-two {
+        display: none;
+    }
+
+    .splash-text {
+        padding: 0;
+    }
+
+    .splash-title {
+        font-size: 30px;
+    }
+
+    .splash-content {
+        padding-top: 20px;
+        position: relative;
+        margin: auto;
+        width: 280px;
+    }
+
+    .nav-bar-title {
+        font-size: 20px;
+    }
+
+    .nav-bar {
+        height: 50px;
+    }
+
+    .single-mission, .icon-container {
+        height: 50px;
+        width: 50px;
+    }
+
+    .skill-text {
+        font-size: 10px;
+    }
+
+    .rocket-title, .fuel-title, .resources-title, .powerup-title, .first-title, .missions-title, .mentors-title, .partners-title {
+        font-size: 30px;
+    }
+
+    .hosted-by-spark {
+        font-size: 25px;
+    }
+
+    .spark-logo {
+        height: 40px;
+    }
+
+}
