@@ -4,7 +4,6 @@ var $             = require('gulp-load-plugins')();
 var autoprefixer  = require('autoprefixer');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-var ghPages = require('gulp-gh-pages');
 var path = require('path');
 var sassPaths = [
   'node_modules/foundation-sites/scss',
@@ -56,7 +55,4 @@ gulp.task('sass', sass);
 gulp.task('serve', gulp.series('sass', serve));
 gulp.task('default', gulp.series('sass', serve));
 gulp.task('temp', gulp.parallel('scripts', sass)); //Remove if still exists in code
-gulp.task('deploy', gulp.series(gulp.parallel('scripts', sass), function() {
-  return gulp.src('../**/*')
-    .pipe(ghPages());
-}));
+gulp.task('deploy', gulp.series(gulp.parallel('scripts', sass)));
