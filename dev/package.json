@@ -26,6 +26,7 @@
   "devDependencies": {
     "autoprefixer": "^9.1.5",
     "browser-sync": "^2.18.13",
+    "gift": "^0.10.2",
     "gulp": "^4.0.0",
     "gulp-bundle-assets": "^2.29.0",
     "gulp-concat": "^2.6.1",

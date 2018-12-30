@@ -4,6 +4,7 @@ var $             = require('gulp-load-plugins')();
 var autoprefixer  = require('autoprefixer');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var path = require('path');
 var sassPaths = [
   'node_modules/foundation-sites/scss',
   'node_modules/motion-ui/src'
@@ -53,3 +54,5 @@ function serve() {
 gulp.task('sass', sass);
 gulp.task('serve', gulp.series('sass', serve));
 gulp.task('default', gulp.series('sass', serve));
+gulp.task('temp', gulp.parallel('scripts', sass)); //Remove if still exists in code
+gulp.task('deploy', gulp.series(gulp.parallel('scripts', sass)));
