@@ -23,6 +23,9 @@ let data = {
 
 $('.carousel').carousel({interval: 1500})
 
+
+
+
 var ethinicity_chart_do = document.getElementById('ethnicity-chart').getContext('2d');
 Chart.defaults.global.defaultFontSize = 14;
 let data_ethnicity = {
@@ -147,3 +150,26 @@ $(document).ready(function() {
   });
 
 });
+
+
+
+
+
+//Courtesy of: https://www.w3schools.com/howto/howto_js_sticky_header.asp
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {stickNavBar()};
+
+// Get the header
+var header = document.getElementById("navbarWrapper");
+
+// Get the offset position of the navbar
+var sticky = header.offsetTop;
+
+// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function stickNavBar() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
