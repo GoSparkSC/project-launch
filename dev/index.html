@@ -13,7 +13,7 @@
 <body>
 
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="200">
     <div class="callout">
       <p>In the future a blurb about powerup can go here </p>
     </div>
@@ -29,25 +29,87 @@
       <!-- <img src="https://via.placeholder.com/500x500?text=Banner+Here" /> -->
     </div>
 
+    <nav id="sidebar" class="nav-bar navbar-dark">
 
-    <div class="nav-bar">
-      <div class="title nav-bar-title"></div>
+      <img src="assets/img/xicon.svg" id="x-icon"/>
+      <ul class="navbar-nav navbar"  id="vertical-nav-list">
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#impact" class="nav-link">Impact</a></li>
+        <li class="nav-item"><a href="#apply-section" class="nav-link">Apply</a></li>
+        <li class="nav-item"><a href="#press" class="nav-link">Press</a></li>
+        <li class="nav-item"><a href="#partners" class="nav-link">Partners</a></li>
+      </ul>
+    </nav>
+    <div id="navbarWrapper" class="nav-bar">
+
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button> -->
+        <div id="navbarNav">
+<img src="assets/img/hamburger.svg" id="hamburger"/>
+          <div id="nav-bar-large-screens">
+
+            <ul class="navbar-nav navbar"
+
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#impact">Impact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#apply-section">Apply</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#press">Press</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#partners">Partners</a>
+              </li>
+
+            </ul>
+          </div>
+          <div class="social-media-div">
+            <ul class="navbar-nav social-media">
+              <li class="nav-item active">
+                <img src="assets/img/mail.svg">
+              </li>
+              <li class="nav-item active">
+                <img src="assets/img/facebook.svg">
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
     </div>
     <img class="meteor-one" src="assets/img/meteor.png"></img>
     <img class="meteor-two" src="assets/img/meteor.png"></img>
 
 
+    <div id="about">
 
 
-
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
-      </ol>
-      <div class="carousel-inner">
-        <!-- <div class="carousel-item active">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1" class=""></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2" class=""></li>
+        </ol>
+        <div class="carousel-inner">
+          <!-- <div class="carousel-item active">
           <div class="carousel-item-css">
 
             <div class="image-container">
@@ -70,107 +132,109 @@
             </div>
           </div>
         </div> -->
-        <div class="carousel-item active">
-          <div class="horizontal-container carousel-item-css">
-            <div id="internships-image-container" class="photo-card-border image-container-main">
-              <img src="assets/img/scholarships.png">
-            </div>
+          <div class="carousel-item active">
+            <div class="horizontal-container carousel-item-css">
+              <div id="internships-image-container" class="photo-card-border image-container-main">
+                <img src="assets/img/scholarships.png">
+              </div>
 
-            <div class="horizontal-container-description">
-              <div class="subtitle"> Lorem </div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </div>
+              <div class="horizontal-container-description">
+                <div class="subtitle"> Lorem </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              </div>
 
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="horizontal-container carousel-item-css">
+              <div id="internships-image-container" class="photo-card-border image-container-main">
+                <img src="assets/img/scholarships.png">
+              </div>
+              <div class="horizontal-container-description">
+                <div class="subtitle"> Lorem </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              </div>
+
+            </div>
           </div>
         </div>
         <div class="carousel-item">
-          <div class="horizontal-container carousel-item-css">
-            <div id="internships-image-container" class="photo-card-border image-container-main">
-              <img src="assets/img/scholarships.png">
-            </div>
-            <div class="horizontal-container-description">
-              <div class="subtitle"> Lorem </div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </div>
+          <div class="carousel-item-css">
 
+            <div class="horizontal-container carousel-item-css">
+              <div id="internships-image-container" class="photo-card-border image-container-main">
+                <img src="assets/img/scholarships.png">
+              </div>
+              <div class="horizontal-container-description">
+                <div class="subtitle"> Lorem </div>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+              </div>
+
+            </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="carousel-item-css">
-
-          <div class="horizontal-container carousel-item-css">
-            <div id="internships-image-container" class="photo-card-border image-container-main">
-              <img src="assets/img/scholarships.png">
-            </div>
-            <div class="horizontal-container-description">
-              <div class="subtitle"> Lorem </div>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-              in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
 
     </div>
 
 
-    <div id="internships-container" class="horizontal-container">
-      <div id="internships-image-container" class="photo-card-border image-container-main">
-        <img src="assets/img/scholarships.png">
-      </div>
-      <div id="internships-desc-container" class="horizontal-container-description">
-        <div class="subtitle"> Lorem </div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-      </div>
-    </div>
-
-
-    <div id="scholarships-container" class="horizontal-container">
-      <div id="scholarships-image-container" class="photo-card-border image-container-main">
-        <img src="assets/img/scholarships.png">
-      </div>
-      <div class="horizontal-container-description" >
-        <div class="subtitle "> Lorem </div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-      </div>
-    </div>
-
-
-    <div class="charts-information">
-      <div class="charts-outer-container">
-        <div class="chart-container">
-          <canvas id="gender-chart"> </canvas>
+    <div id="impact">
+      <div id="internships-container" class="horizontal-container">
+        <div id="internships-image-container" class="photo-card-border image-container-main">
+          <img src="assets/img/scholarships.png">
         </div>
-        <div class="chart-container">
-          <canvas id="ethnicity-chart"> </canvas>
+        <div id="internships-desc-container" class="horizontal-container-description">
+          <div class="subtitle"> Lorem </div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
         </div>
       </div>
-      <!--buttons-->
 
-      <div class="rect-container">
-        <div class="inverse-round-rect">
 
-          <div id="2017" class="toggle-button toggle-active">
-            2017
+      <div id="scholarships-container" class="horizontal-container">
+        <div id="scholarships-image-container" class="photo-card-border image-container-main">
+          <img src="assets/img/scholarships.png">
+        </div>
+        <div class="horizontal-container-description">
+          <div class="subtitle "> Lorem </div>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </div>
+      </div>
+
+
+      <div class="charts-information">
+        <div class="charts-outer-container">
+          <div class="chart-container">
+            <canvas id="gender-chart"> </canvas>
           </div>
-
-        </div>
-        <div class="inverse-round-rect">
-
-          <div id="2018" class="toggle-button toggle-active">
-            2018
+          <div class="chart-container">
+            <canvas id="ethnicity-chart"> </canvas>
           </div>
-
         </div>
-      </div>
+        <!--buttons-->
 
+        <div class="rect-container">
+          <div class="inverse-round-rect">
+
+            <div id="2017" class="toggle-button toggle-active">
+              2017
+            </div>
+
+          </div>
+          <div class="inverse-round-rect">
+
+            <div id="2018" class="toggle-button toggle-active">
+              2018
+            </div>
+
+          </div>
+        </div>
+
+      </div>
     </div>
     <div class="horizontal-container" id="apply-section">
       <div id="apply-desc-container">
@@ -196,31 +260,33 @@
     </div>
 
     </div>
-    <div class="title">Press</div>
-    <div class="horizontal-container" style="margin-top:20px" id="article-section">
-      <div class="post-card">
-        <div class="post-card-image">
+    <div id="press">
+      <div class="title">Press</div>
+      <div class="horizontal-container" style="margin-top:20px" id="article-section">
+        <div class="post-card">
+          <div class="post-card-image">
+          </div>
+          <div class="post-card-content">
+            <div class="subtitle"> Lorem </div>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing el </p>
+          </div>
         </div>
-        <div class="post-card-content">
-          <div class="subtitle"> Lorem </div>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing el </p>
-        </div>
-      </div>
 
-      <div class="post-card">
-        <div class="post-card-image">
+        <div class="post-card">
+          <div class="post-card-image">
+          </div>
+          <div class="post-card-content">
+            <div class="subtitle"> Lorem </div>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing el </p>
+          </div>
         </div>
-        <div class="post-card-content">
-          <div class="subtitle"> Lorem </div>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing el </p>
-        </div>
-      </div>
-      <div class="post-card">
-        <div class="post-card-image">
-        </div>
-        <div class="post-card-content">
-          <div class="subtitle"> Lorem </div>
-          <p> Lorem ipsum dolor sit amet, consectetur adipiscing el </p>
+        <div class="post-card">
+          <div class="post-card-image">
+          </div>
+          <div class="post-card-content">
+            <div class="subtitle"> Lorem </div>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing el </p>
+          </div>
         </div>
       </div>
     </div>
@@ -334,24 +400,25 @@
         </a>
       </div>
     </div> -->
-    <div class="fuel-section">
-      <div class="title fuel-title">FUEL THE LAUNCH</div>
-      <div class="content fuel-content">
-        We aim to work with partners that want to <strong>invest in a diverse future</strong> for the STEAM fields and beyond. Partners have the opportunity to collaborate on our periodic work sessions, invite the mentees and mentors on tech tours, and
-        support the scholarships our mentees need to get a STEAM education. <strong>Project Launch needs you</strong> to fuel the launch.
-      </div>
-      <div class="rect-container">
-        <a href="assets/pdf/ProjectLaunch_Sponsorship.pdf">
-          <div class="round-rect">
-            <div class="fuel-button">Learn More</div>
-          </div>
-        </a>
-        <a href="mailto:hello@projectlaunch.io?Subject=Project%20Launch%20Partnership">
-          <div class="round-rect">
-            <div class="fuel-button">Email Us</div>
-          </div>
-        </a>
-        <!--
+    <div id="partners">
+      <div class="fuel-section">
+        <div class="title fuel-title">FUEL THE LAUNCH</div>
+        <div class="content fuel-content">
+          We aim to work with partners that want to <strong>invest in a diverse future</strong> for the STEAM fields and beyond. Partners have the opportunity to collaborate on our periodic work sessions, invite the mentees and mentors on tech tours,
+          and support the scholarships our mentees need to get a STEAM education. <strong>Project Launch needs you</strong> to fuel the launch.
+        </div>
+        <div class="rect-container">
+          <a href="assets/pdf/ProjectLaunch_Sponsorship.pdf">
+            <div class="round-rect">
+              <div class="fuel-button">Learn More</div>
+            </div>
+          </a>
+          <a href="mailto:hello@projectlaunch.io?Subject=Project%20Launch%20Partnership">
+            <div class="round-rect">
+              <div class="fuel-button">Email Us</div>
+            </div>
+          </a>
+          <!--
                 <a href="http://projectlaunch.io/donate" style="margin-left: 20px;">
                 <div class="round-rect">
                     <div class="fuel-button">Donate!</div>
@@ -359,24 +426,25 @@
                 </a>
             -->
 
+        </div>
       </div>
-    </div>
-    <div class="sponsors-section">
-      <div class="title">Our Partners</div>
+      <div class="sponsors-section">
+        <div class="title">Our Partners</div>
 
 
-      <img src="assets/img/partners/hybridhigh.png">
-      <img src="assets/img/partners/adobe.png">
-      <img src="assets/img/partners/msft.png">
-      <img src="assets/img/partners/blackstone.png">
+        <img src="assets/img/partners/hybridhigh.png">
+        <img src="assets/img/partners/adobe.png">
+        <img src="assets/img/partners/msft.png">
+        <img src="assets/img/partners/blackstone.png">
 
-      <img src="assets/img/partners/science.png">
-      <img src="assets/img/partners/buzzfeed.png">
-      <img src="assets/img/partners/lava.png">
-      <!-- <img style="height:120px;" src="assets/img/partners/powerup.png"> -->
-      <img  style="height:120px;"  src="assets/img/partners/dfa.png">
-      <!-- <div class="title">A Special Thanks To Previous Donors:</div>
+        <img src="assets/img/partners/science.png">
+        <img src="assets/img/partners/buzzfeed.png">
+        <img src="assets/img/partners/lava.png">
+        <!-- <img style="height:120px;" src="assets/img/partners/powerup.png"> -->
+        <img style="height:120px;" src="assets/img/partners/dfa.png">
+        <!-- <div class="title">A Special Thanks To Previous Donors:</div>
       <div class="content" style="text-align:center;font-size:1.3em">Kama and Tom Fletcher, Anil and Benu Aggarwal, Debbie Lee, Michael Chen, Lisa McCarthy</div> -->
+      </div>
     </div>
     <!-- <div class="partners-section">
             <div class="title partners-title">CURRENT PARTNERS</div>
