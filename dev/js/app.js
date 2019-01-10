@@ -177,18 +177,18 @@ function stickNavBar() {
 $(document).ready(function() {
   $("#x-icon").click(function() {
     $("#sidebar").css("visibility", "hidden");
-    // $("body", "html").css("overflow-y", "scroll");
+    $("body, html").css("overflow-y", "auto");
   });
 
   $("#vertical-nav-list").click(function() {
     $("#sidebar").css("visibility", "hidden");
-    // $("body", "html").css("overflow-y", "scroll");
+    $("body , html").css("overflow-y", "auto");
   });
 
   $("#hamburger").click(function() {
     $("#sidebar").css("visibility", "visible");
 
-    $("body", "html").css("overflow-y", "hidden");
+    $("body, html").css("overflow-y", "hidden");
 
   });
 });
