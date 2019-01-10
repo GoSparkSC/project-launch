@@ -1,27 +1,27 @@
 var ctx = document.getElementById('gender-chart').getContext('2d');
 $(document).foundation();
 let data = {
-  datasets: [
-    {
-      label: "2017",
-      data: [
-        25, 75
-      ],
-      backgroundColor: ['rgba(237, 49, 51, 0.7)', 'rgba(251, 159, 83, 0.7)']
-    }, {
-      label: "2018",
-      data: [
-        30, 70
-      ],
-      backgroundColor: ['rgba(237, 49, 51, 0.7)', 'rgba(251, 159, 83, 0.7)']
-    }
-  ],
+  datasets: [{
+    label: "2017",
+    data: [
+      25, 75
+    ],
+    backgroundColor: ['rgba(237, 49, 51, 0.7)', 'rgba(251, 159, 83, 0.7)']
+  }, {
+    label: "2018",
+    data: [
+      30, 70
+    ],
+    backgroundColor: ['rgba(237, 49, 51, 0.7)', 'rgba(251, 159, 83, 0.7)']
+  }],
 
   // These labels appear in the legend and in the tooltips when hovering different arcs
   labels: ['Male', 'Female']
 };
 
-$('.carousel').carousel({interval: 1500})
+$('.carousel').carousel({
+  interval: 1500
+})
 
 
 
@@ -29,21 +29,19 @@ $('.carousel').carousel({interval: 1500})
 var ethinicity_chart_do = document.getElementById('ethnicity-chart').getContext('2d');
 Chart.defaults.global.defaultFontSize = 14;
 let data_ethnicity = {
-  datasets: [
-    {
-      label: "2017",
-      data: [
-        20, 80
-      ],
-      backgroundColor: ['rgba(23, 16, 67, 0.7)', 'rgba(193, 241, 248, 0.7)']
-    }, {
-      label: "2018",
-      data: [
-        30, 70
-      ],
-      backgroundColor: ['rgba(23, 16, 67, 0.7)', 'rgba(193, 241, 248, 0.7)']
-    }
-  ],
+  datasets: [{
+    label: "2017",
+    data: [
+      20, 80
+    ],
+    backgroundColor: ['rgba(23, 16, 67, 0.7)', 'rgba(193, 241, 248, 0.7)']
+  }, {
+    label: "2018",
+    data: [
+      30, 70
+    ],
+    backgroundColor: ['rgba(23, 16, 67, 0.7)', 'rgba(193, 241, 248, 0.7)']
+  }],
   // These labels appear in the legend and in the tooltips when hovering different arcs
   labels: ['Afr. Amer.', 'Hispanic']
 };
@@ -157,7 +155,9 @@ $(document).ready(function() {
 
 //Courtesy of: https://www.w3schools.com/howto/howto_js_sticky_header.asp
 // When the user scrolls the page, execute myFunction
-window.onscroll = function() {stickNavBar()};
+window.onscroll = function() {
+  stickNavBar()
+};
 
 // Get the header
 var header = document.getElementById("navbarWrapper");
@@ -173,3 +173,23 @@ function stickNavBar() {
     header.classList.remove("sticky");
   }
 }
+
+$(document).ready(function() {
+  $("#x-icon").click(function() {
+    $("#sidebar").css("visibility", "hidden");
+    // $("body", "html").css("overflow-y", "scroll");
+  });
+
+  $("#vertical-nav-list").click(function() {
+    $("#sidebar").css("visibility", "hidden");
+    // $("body", "html").css("overflow-y", "scroll");
+  });
+
+  $("#hamburger").click(function() {
+    $("#sidebar").css("visibility", "visible");
+
+    $("body", "html").css("overflow-y", "hidden");
+
+  });
+});
+document.getElementById("sidebar")

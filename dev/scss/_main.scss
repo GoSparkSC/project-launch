@@ -11,6 +11,31 @@
 }
 $color-dark: #171144;
 
+#sidebar {
+  background-color: #ef2e25;
+  color: white;
+  display: flex;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 100000;
+  top: 0;
+  display: block;
+  visibility: hidden;
+
+}
+
+#vertical-nav-list {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: (100%);
+  margin: 0;
+  flex-direction: column;
+}
+
 body,
 html {
   margin: 0;
@@ -28,6 +53,25 @@ html {
   font-family: Moon;
   font-size: 14px;
   font-weight: bold;
+}
+
+#x-icon {
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: white;
+  height: 70px;
+  padding: 20px;
+  margin-right: 2%;
+  margin-top: 2%;
+  opacity: 0.5;
+  background-color: #bf160d;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+#x-icon:active {
+  opacity: 0.8;
 }
 
 .post-card {
@@ -77,15 +121,18 @@ html {
   margin-bottom: 10px;
   text-align: center;
 }
+
 .navbar {
   width: 100%;
 }
+
 #navbarNav {
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-grow: 1;
 }
+
 .title {
   font-family: Moon;
   font-weight: bold;
@@ -101,16 +148,17 @@ html {
   text-align: left;
 }
 
+#navbarWrapper,
 .navbar-nav {
   font-size: 20px;
   font-family: Avenir;
 }
 
-.social-media > li{
-  padding-left:10px;
-  padding-right:10px;
-
+.social-media > li {
+  padding-left: 10px;
+  padding-right: 10px;
 }
+
 .social-media-div {
   flex-grow: 1;
   display: flex;
@@ -232,6 +280,14 @@ html {
   text-align: center;
 }
 
+
+
+#hamburger {
+  height: 35px;
+  padding: 5px;
+  display: none;
+}
+
 .nav-bar {
   z-index: 1;
   width: 100%;
@@ -244,10 +300,11 @@ html {
   font-weight: bold;
   font-size: 55px;
 }
+
 .sticky {
   height: auto;
   position: fixed;
-  top: 0px;
+  top: 0;
 }
 
 .nav-bar-title {
@@ -755,11 +812,36 @@ iframe {
   font-size: 40px;
   display: inline;
 }
+@media (max-width: 992px) {
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+}
 @media (max-width: 700px) {
   .meteor-one,
   .meteor-two,
   .rocket {
     display: none;
+  }
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+
+  #hamburger {
+    height: 35px;
+    padding: 5px;
+    display: block;
+  }
+
+  #nav-bar-large-screens {
+    display: none;
+    flex-grow: 0;
   }
 
   .splash-text {
@@ -796,6 +878,7 @@ iframe {
   .skill-text {
     font-size: 10px;
   }
+
   .sponsors-section img {
     height: 50px;
     margin: 50px;
@@ -816,11 +899,11 @@ iframe {
   .hosted-by-spark {
     font-size: 20px;
   }
+
   .spark-logo {
     height: 50px;
     width: auto;
     display: inline-block;
     margin: 0 20px;
   }
-
 }
