@@ -178,17 +178,20 @@ $(document).ready(function() {
   $("#x-icon").click(function() {
     $("#sidebar").css("visibility", "hidden");
     $("body, html").css("overflow-y", "auto");
+    $("body, html").unbind("touchmove");
   });
 
   $("#vertical-nav-list").click(function() {
     $("#sidebar").css("visibility", "hidden");
     $("body , html").css("overflow-y", "auto");
+    $("body, html").unbind("touchmove");
   });
 
   $("#hamburger").click(function() {
     $("#sidebar").css("visibility", "visible");
 
     $("body, html").css("overflow-y", "hidden");
+    $("body, html").on("touchmove", false);
 
   });
 });
