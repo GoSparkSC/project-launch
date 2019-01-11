@@ -22,7 +22,6 @@ $color-dark: #171144;
   top: 0;
   display: block;
   visibility: hidden;
-
 }
 
 #vertical-nav-list {
@@ -152,6 +151,7 @@ html {
 .navbar-nav {
   font-size: 20px;
   font-family: Avenir;
+  z-index: 30;
 }
 
 .social-media > li {
@@ -187,9 +187,8 @@ html {
 .splash {
   position: relative;
   width: 100%;
-  height: 600px;
+  height: 500px;
   background-size: cover;
-  background-image: url('../assets/img/space.svg');
   background-color: $color-dark;
   display: -webkit-flex;
   display: flex;
@@ -280,8 +279,6 @@ html {
   text-align: center;
 }
 
-
-
 #hamburger {
   height: 35px;
   padding: 5px;
@@ -318,6 +315,7 @@ html {
   width: 200px;
   margin-top: -100px;
   opacity: 0.6;
+  z-index: -1;
 }
 
 .meteor-two {
@@ -327,6 +325,7 @@ html {
   width: 100px;
   height: auto;
   opacity: 0.5;
+  z-index: -1;
 }
 
 .gengirl-content {
@@ -363,6 +362,7 @@ html {
   .image-container-main {
     width: 100%;
     padding: 20px;
+    overflow: hidden;
   }
   align-items: center;
 }
@@ -417,7 +417,7 @@ html {
   background-position: center;
   width: 10000px;
   height: 100%;
-  background-image: url('https://unsplash.com/assets/api/api-photo-grid@2x-91e58fc51b4076707c684845cff4670673a1db47b52c592cdd416f6b9ab7bfca.jpg');
+  background-image: url('../assets/img/apply_banner.jpg');
 }
 @keyframes scroll-grid {
   0% {
@@ -749,6 +749,70 @@ iframe {
   padding: 40px 0;
 }
 
+#video-block-id {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.play-button-div {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  // vertical-align: center;
+  display: flex;
+}
+
+.video-block {
+  width: 100%;
+  display: block;
+  background: url('../assets/img/scholarships.png');
+  background-size: cover;
+  z-index: -1;
+}
+
+.pclink {
+  color: black;
+  text-decoration: none;
+}
+.pclink:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.blurb {
+  font-style: italic;
+  font-size: 12px;
+}
+
+.play-button-link {
+  height: 20%;
+}
+
+.play-button {
+  height: 100%;
+  opacity: 0.8;
+}
+
+.play-button:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.main-info {
+  padding: 50px 20px;
+  font-size: 18px;
+  margin: 0;
+}
+
 .fuel-content {
   text-align: left;
   width: 80%;
@@ -828,10 +892,10 @@ iframe {
   .rocket {
     display: none;
   }
+
   .navbar-nav {
     flex-direction: row;
   }
-
 
   #hamburger {
     height: 35px;
