@@ -668,6 +668,7 @@ iframe {
     order: 1;
   }
 
+
   #apply-desc-container {
     width: 40%;
     height: 600px;
@@ -923,11 +924,19 @@ iframe {
     padding-left: 0.5rem;
   }
 }
+#logo {
+  height: 80px;
+}
+
 @media (max-width: 700px) {
   .meteor-one,
   .meteor-two,
   .rocket {
     display: none;
+  }
+
+  #logo {
+    height: 50px;
   }
 
   .navbar-nav {
@@ -979,6 +988,7 @@ iframe {
   .skill-text {
     font-size: 10px;
   }
+
 
   .sponsors-section img {
     height: 45px;
