@@ -32,7 +32,7 @@ let data_ethnicity = {
   datasets: [{
     label: "2017",
     data: [
-      20, 80
+      17, 83
     ],
     backgroundColor: ['rgba(23, 16, 67, 0.7)', 'rgba(193, 241, 248, 0.7)']
   }, {
