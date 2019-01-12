@@ -37,11 +37,14 @@ $color-dark: #171144;
 
 body,
 html {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   max-width: 100%;
+  width: 100%;
 
 }
+
+
 
 #content {
   overflow-x: hidden;
@@ -665,6 +668,7 @@ iframe {
     order: 1;
   }
 
+
   #apply-desc-container {
     width: 40%;
     height: 600px;
@@ -920,11 +924,19 @@ iframe {
     padding-left: 0.5rem;
   }
 }
+#logo {
+  height: 80px;
+}
+
 @media (max-width: 700px) {
   .meteor-one,
   .meteor-two,
   .rocket {
     display: none;
+  }
+
+  #logo {
+    height: 50px;
   }
 
   .navbar-nav {
@@ -977,9 +989,10 @@ iframe {
     font-size: 10px;
   }
 
+
   .sponsors-section img {
-    height: 50px;
-    margin: 50px;
+    height: 45px;
+    margin: 30px;
     vertical-align: middle;
   }
 
