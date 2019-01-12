@@ -108,7 +108,6 @@ $(document).ready(function() {
   $.fn.isInViewport = function() {
     //console.log($(this))
     if ($(this).length > 0) {
-      console.log("here")
       var elementTop = $(this).offset().top;
       var elementBottom = elementTop + $(this).outerHeight();
 

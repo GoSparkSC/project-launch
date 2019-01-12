@@ -40,8 +40,18 @@ html {
   margin: 0;
   padding: 0;
   max-width: 100%;
-  overflow-x: hidden;
+
 }
+
+#content {
+  overflow-x: hidden;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+
+
 
 .button-abstract {
   position: relative;
@@ -258,6 +268,12 @@ html {
   font-size: 20px;
 }
 
+.close-button-pl {
+  @extend .button-abstract;
+  background-color: white;
+  color: black;
+}
+
 .apply-button,
 .fuel-button {
   @extend .button-abstract;
@@ -408,6 +424,7 @@ html {
   background-color: $color-dark;
   color: #FFFFFF;
   padding: 0;
+
 }
 
 #scroll-grid-image {
@@ -569,6 +586,17 @@ iframe {
   height: 50px;
 }
 
+.m-button {
+  margin: 10px;
+  align-self:flex-end;
+  height: 40px;
+  width: 80px;
+  text-align: center;
+
+
+
+}
+
 .photo-card-border {
   padding: 25px;
   background-color: white;
@@ -693,6 +721,10 @@ iframe {
   }
 }
 
+.modal img {
+  width: 100%;
+}
+
 .rocket-headshot img {
   width: 100%;
 }
@@ -774,10 +806,12 @@ iframe {
 .video-block {
   width: 100%;
   display: block;
-  background: url('../assets/img/scholarships.png');
+
   background-size: cover;
   z-index: -1;
 }
+
+
 
 .pclink {
   color: black;
@@ -963,7 +997,6 @@ iframe {
   .hosted-by-spark {
     font-size: 20px;
   }
-
   .spark-logo {
     height: 50px;
     width: auto;
