@@ -381,9 +381,20 @@ html {
   .image-container-main {
     width: 100%;
     padding: 20px;
+
     overflow: hidden;
+
   }
   align-items: center;
+}
+.carousel-desc {
+
+}
+
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
 }
 
 .horizontal-container-two {
