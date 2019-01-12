@@ -37,11 +37,14 @@ $color-dark: #171144;
 
 body,
 html {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   max-width: 100%;
+  width: 100%;
 
 }
+
+
 
 #content {
   overflow-x: hidden;
@@ -978,8 +981,8 @@ iframe {
   }
 
   .sponsors-section img {
-    height: 50px;
-    margin: 50px;
+    height: 45px;
+    margin: 30px;
     vertical-align: middle;
   }
 
