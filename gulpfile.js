@@ -14,7 +14,8 @@ var jsPaths = [
   'node_modules/jquery/dist/jquery.js',
   'node_modules/what-input/dist/what-input.js',
   'node_modules/foundation-sites/dist/js/foundation.js',
-  'node_modules/bootstrap/dist/js/bootstrap.min.js'
+  'node_modules/bootstrap/dist/js/bootstrap.min.js',
+  'js/Chart.min.js'
 ];
 
 var bundle = require('gulp-bundle-assets');

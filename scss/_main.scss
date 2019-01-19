@@ -4,6 +4,18 @@
   src: url("../assets/font/Moon Light.otf");
   font-weight: lighter;
 }
+
+@font-face {
+  font-family: Vision-Italic;
+  src: url("../assets/font/vision-black-italic.woff");
+}
+
+
+@font-face {
+  font-family: Vision-Bold;
+  src: url("../assets/font/vision-bold.woff");
+}
+
 @font-face {
   font-family: Moon;
   src: url("../assets/font/Moon Bold.otf");
@@ -59,6 +71,7 @@ html {
   padding: 0px;
   max-width: 100%;
   width: 100%;
+  font-family: Helvetica;
 
 }
 
@@ -80,7 +93,8 @@ html {
   width: 86%;
   padding: 6px 0;
   border-radius: 10px;
-  font-family: Moon;
+  font-family: Vision-Bold;
+  text-transform: uppercase;
   font-size: 14px;
   font-weight: bold;
 }
@@ -145,8 +159,7 @@ html {
 }
 
 .subtitle {
-  font-family: Avenir;
-  font-weight: bold;
+  font-family: Vision-Bold;
   font-size: 30px;
   margin-bottom: 10px;
   text-align: center;
@@ -164,16 +177,20 @@ html {
 }
 
 .title {
-  font-family: Moon;
-  font-weight: bold;
+  font-family: Vision-Italic;
   font-size: 40px;
   text-align: center;
   padding: 40px 0;
+  text-transform: uppercase;
+}
+
+.main-title {
+  text-transform: uppercase;
 }
 
 .content {
-  font-family: Helvetica;
-  font-weight: lighter;
+
+
   font-size: 16px;
   text-align: left;
 }
@@ -181,7 +198,7 @@ html {
 #navbarWrapper,
 .navbar-nav {
   font-size: 20px;
-  font-family: Avenir;
+  font-family: Vision-Bold;
   z-index: 30;
 }
 
@@ -287,6 +304,7 @@ html {
   background-color: white;
   color: black;
   font-size: 20px;
+  font-family: Vision-Italic;
 }
 
 .close-button-pl {
@@ -330,7 +348,7 @@ html {
   color: white;
   display: flex;
   text-align: left;
-  font-family: Moon;
+  font-family: Vision-Italic;
   font-weight: bold;
   font-size: 55px;
 }
@@ -538,7 +556,7 @@ iframe {
 }
 
 .skill-text {
-  font-family: Moon;
+  font-family: Vision-Italic;
   font-weight: bold;
   font-size: 18px;
   color: white;
@@ -913,7 +931,7 @@ iframe {
 .contact-us {
   margin-top: 30px;
   text-align: center;
-  font-family: Avenir;
+  font-family: Vision;
 }
 
 .no-underline {
@@ -939,11 +957,12 @@ iframe {
 
 .hosted-by-spark {
   color: white;
-  font-family: Moon;
-  font-weight: bold;
+  font-family: Vision-Italic;
   font-size: 40px;
   display: inline;
 }
+
+
 @media (max-width: 992px) {
   .navbar-nav {
     flex-direction: row;

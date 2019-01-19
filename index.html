@@ -15,11 +15,13 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="200">
   <div id="content">
-    
+    <!-- <div class="callout">
+      <p>In the future a blurb about powerup can go here </p>
+    </div> -->
     <div class="splash">
       <div class="splash-text">
 
-        <div class="title splash-title"><img id="logo" src="assets/img/logo.svg"> Project Launch</div>
+        <div class="title splash-title main-title"><img id="logo" src="assets/img/logo.svg"> Project Launch</div>
         <div class="content splash-content">
           We connect underserved Los Angeles high school students to relevant USC student mentors, and help our students build the hard skills, soft skills, and growth mindset they will need as leaders of the next generation.
         </div>
@@ -103,7 +105,7 @@
     </div>
     <div id="video-block-id">
       <div class="video-block">
-        <video autoplay muted loop width="100%" id="myVideo">
+        <video playsinline autoplay muted loop width="100%" id="myVideo">
           <source src="assets/img/project_launch_video.mp4" type="video/mp4">
         </video>
         <div class="play-button-div">
@@ -371,7 +373,7 @@
 
   <div id="partners">
     <div class="fuel-section">
-      <div class="title fuel-title">FUEL THE LAUNCH</div>
+      <div class="title fuel-title">Fuel the Launch</div>
       <div class="content fuel-content">
         We aim to work with partners that want to <strong>invest in a diverse future</strong> for the STEAM fields and beyond. Partners have the opportunity to collaborate on our periodic work sessions, invite the mentees and mentors on tech tours, and
         support the scholarships our mentees need to get a STEAM education. <strong>Project Launch needs you</strong> to fuel the launch.
@@ -437,7 +439,7 @@
 
   <!--TODO: build into bundle using gulpfile-->
   <script src="build/js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  
   <!--todo add to minified js for production-->
   <script src="js/app.js"></script>
   <!--TODO: delete for production)-->
