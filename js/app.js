@@ -56,13 +56,13 @@ $(document).ready(function() {
       obj.addClass("toggle-active");
       obj.removeClass("toggle");
       if (obj[0].id == "2017") {
-        addData(ethnicity_pie_chart, "2017", [30, 70])
-        addData(myPieChart, "2017", [30, 70])
+        addData(ethnicity_pie_chart, "2017", [83, 17])
+        addData(myPieChart, "2017", [25, 75])
       }
 
       if (obj[0].id == "2018") {
-        addData(ethnicity_pie_chart, "2018", [30, 70])
-        addData(myPieChart, "2018", [30, 70])
+        addData(ethnicity_pie_chart, "2018", [25, 75])
+        addData(myPieChart, "2018", [25, 75])
       }
 
     } else {
